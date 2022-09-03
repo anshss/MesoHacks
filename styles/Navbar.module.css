@@ -1,0 +1,22 @@
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background-color: #1f212c;
+}
+
+.icon {
+  padding: 10px;
+  background-color: white;
+  border-radius: 4px;
+  width: 55px;
+}
+.icon2 {
+  padding: 10px;
+  background-color: inherit;
+  color: white;
+  border-radius: 4px;
+  width: 55px;
+}

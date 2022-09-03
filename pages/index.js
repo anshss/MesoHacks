@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import NewsSection from "./newsSection";
+
 import Slider from "./slider";
 export default function Home() {
   return (

@@ -1,0 +1,101 @@
+.container {
+  /* background-color: #1f212c; */
+
+  background: linear-gradient(180deg, #1f212c 0%, #1f2232 100%);
+  min-height: 100vh;
+  padding: 75px 175px;
+}
+
+.main {
+  display: block;
+}
+
+.heading {
+  color: white;
+  font-size: 3rem;
+  margin: 0%;
+  font-weight: 500;
+  color: #eceded;
+  margin-bottom: 60px;
+}
+
+.postCard {
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(7, 12, 17, 1) 0%,
+    rgba(15, 23, 37, 1) 100%
+  );
+  padding: 50px 100px;
+  border-radius: 8px;
+}
+
+.fields {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px;
+}
+
+.fields label {
+  color: white;
+  font-size: 1.75rem;
+  color: #eceded;
+  margin-top: 15px;
+}
+.fields input {
+  background-color: transparent;
+  color: gray;
+  border-color: #b1b4b6;
+  outline: none;
+  border-radius: 8px;
+  border-style: solid;
+  font-size: 1rem;
+  padding: 18px 30px;
+  width: 70%;
+}
+.fields textarea {
+  background-color: transparent;
+  color: gray;
+  border-color: #b1b4b6;
+  outline: none;
+  border-radius: 8px;
+  border-style: solid;
+  font-size: 1rem;
+  padding: 18px 30px;
+  min-width: 70%;
+  max-width: 70%;
+  border-width: 2px;
+}
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  border-radius: 9px;
+  border-color: white;
+  border-style: solid;
+  outline: none;
+  align-self: right;
+  text-align: right;
+}
+
+.words {
+  color: white;
+  text-align: right;
+  font-size: 1rem;
+  margin: 0px 25px;
+}
+
+.error {
+  color: rgb(219, 41, 41);
+  text-align: right;
+  font-size: 1.25rem;
+  margin: 0px 25px;
+  margin-top: -15px;
+}
