@@ -1,9 +1,10 @@
 import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
-import React from "react";
+import Login from "./LoginBtn.js"
+import { useState } from "react";
 
 export default function Nav() {
-  const [active, setActive] = React.useState(true);
+  const [active, setActive] = useState(true);
 
   return (
     <div className={styles.container}>
@@ -15,7 +16,7 @@ export default function Nav() {
               src="https://img.icons8.com/material-rounded/48/000000/dashboard-layout.png"
             />
           </Link>
-          <Link href="/createpost">
+          <Link href="/post">
             <img
               onClick={() => setActive(false)}
               className={styles.icon2}
