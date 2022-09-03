@@ -17,9 +17,11 @@
     "ethereum-waffle": "^3.4.4",
     "ethers": "^5.7.0",
     "hardhat": "^2.10.2",
-    "next": "12.2.5",
+    "next": "^12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-id-swiper": "^4.0.0",
+    "swiper": "^8.3.2",
     "web3modal": "^1.9.9"
   },
   "devDependencies": {
