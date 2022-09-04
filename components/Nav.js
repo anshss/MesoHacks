@@ -44,6 +44,9 @@ export default function Nav() {
           </>
         )}
       </div>
+      <div className={styles.loginState}>
+        <Login />
+      </div>
       {/* <div className={styles.line}></div> */}
       <hr />
     </div>

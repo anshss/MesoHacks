@@ -1,0 +1,15 @@
+.loginButton {
+  padding: 15px 20px;
+  font-size: 1rem;
+  border-radius: 9px;
+  border-color: white;
+  border-style: solid;
+  outline: none;
+  align-self: right;
+  text-align: right;
+  cursor: pointer;
+}
+.walletIcon {
+  width: 40px;
+  margin-top: 5px;
+}

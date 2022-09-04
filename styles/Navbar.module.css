@@ -8,6 +8,7 @@
   border-width: 1px;
   border-style: solid;
 }
+
 .container {
   display: flex;
   justify-content: center;
@@ -37,4 +38,10 @@
   height: 47px;
   border-bottom: 1px solid black;
   position: absolute;
+}
+
+.loginState {
+  position: absolute;
+  left: calc(100% - 175px);
+  top: 15px;
 }
