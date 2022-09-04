@@ -6,7 +6,7 @@ import web3modal from "web3modal";
 import { ethers } from "ethers";
 import Slider from "./Slider";
 
-export default function Third() {
+export default function Third({ newsUpdate }) {
   const [news, setNews] = useState([
     {
       address: "0xdd3ddadsadd",
@@ -51,6 +51,9 @@ export default function Third() {
   useEffect(() => {
     fetchNews();
   }, []);
+  useEffect(() => {
+    newsUpdate(news);
+  }, [news]);
 
   // fetches articles from contract
   const fetchNews = async () => {
