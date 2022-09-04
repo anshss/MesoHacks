@@ -2,7 +2,6 @@ import styles from "../styles/Login.module.css";
 
 import { useState, useEffect } from "react";
 import Web3Modal from "web3modal";
-import { ethers } from "ethers";
 
 export default function Login() {
   const [LoggedIn, setLoggedIn] = useState(false);
@@ -23,9 +22,7 @@ export default function Login() {
           providerOptions,
         });
 
-        connection = await web3Modal.connect();
-        // const provider = new ethers.providers.Web3Provider(connection)
-        // const address = await provider.send("eth_requestAccounts", []);
+        const connection = await web3Modal.connect();
 
         await connection.request({
           method: "wallet_switchEthereumChain",

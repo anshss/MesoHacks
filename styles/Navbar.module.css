@@ -1,6 +1,7 @@
 .Navbar {
-  padding: 15px 175px;
+  padding: 20px 175px;
   background-color: #1f212c;
+  scroll-snap-type: y mandatory;
 }
 
 .Navbar hr {

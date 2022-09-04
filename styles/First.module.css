@@ -3,7 +3,7 @@
 .hero {
     background: linear-gradient(180deg, #1f212c 0%, #1f2232 100%);
     /* min-height: 100vh; */
-    padding: 75px 175px;
+    padding: 40px 175px;
     padding-bottom: 150px;
     display: block;
   }
