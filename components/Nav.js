@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
 import Login from "./LoginBtn.js"
@@ -7,6 +8,7 @@ export default function Nav() {
   const [active, setActive] = useState(true);
 
   return (
+    <div className={styles.Navbar}>
     <div className={styles.container}>
       {active ? (
         <>
@@ -41,6 +43,8 @@ export default function Nav() {
           </Link>
         </>
       )}
+    </div>
+    <div className={styles.line}></div>
     </div>
   );
 }

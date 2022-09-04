@@ -1,12 +1,11 @@
-import styles from "../styles/Createpost.module.css";
-import Head from "next/head";
+import styles from "../styles/Post.module.css";
 import { contractAddress } from "../address.js";
 import contractAbi from "../artifacts/contracts/NewsDapp.sol/NewsDapp.json";
 import web3modal from "web3modal";
 import { ethers } from "ethers";
 import { useState } from "react";
 
-export default function Home() {
+export default function Post() {
     const [formData, setFormData] = useState({
         title: "",
         content: "",
@@ -49,11 +48,6 @@ export default function Home() {
 
     return (
         <div className={styles.container}>
-            <Head>
-                <title>Create Post</title>
-                <meta name="description" content="Create a post" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
             <div className={styles.main}>
                 <h1 className={styles.heading}>Create your post here!</h1>
                 <div className={styles.postCard}>

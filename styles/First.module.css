@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+.hero {
+    background: linear-gradient(180deg, #1f212c 0%, #1f2232 100%);
+    /* min-height: 100vh; */
+    padding: 75px 175px;
+    padding-bottom: 150px;
+    display: block;
+  }
+
+.heading {
+    color: white;
+    font-size: 3rem;
+    margin: 0%;
+    font-weight: 500;
+    color: #eceded;
+    margin-bottom: 50px;
+  }
+
+  .articleCard {
+    display: flex;
+    height: 30rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  }
+
+  .article {
+    background: linear-gradient(
+        135deg,
+        rgba(7, 12, 17, 1) 0%,
+        #0d1b2e 100%
+      );
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 5rem 5rem;
+    gap: 2rem;
+}
+
+.articleHeading {
+    font-size: 2.4rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.articleParagraph {
+    font-size: 1.2rem;
+}
+
+.image {
+    width: 50%;
+    background-color: #eceded;
+    /* object-fit: inherit; */
+  }

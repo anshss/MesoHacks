@@ -1,6 +1,12 @@
+.line{
+  width: 112px;
+  height: 47px;
+  border-bottom: 1px solid black;
+  position: absolute;
+  }
+
 .container {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 15px 0px;
   display: flex;
   justify-content: center;
   gap: 40px;
@@ -11,12 +17,14 @@
   padding: 10px;
   background-color: white;
   border-radius: 4px;
-  width: 55px;
+  width: 40px;
+  height: 40px;
 }
 .icon2 {
   padding: 10px;
   background-color: inherit;
   color: white;
   border-radius: 4px;
-  width: 55px;
+  width: 40px;
+  height: 40px;
 }

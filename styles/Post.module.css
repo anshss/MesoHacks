@@ -4,6 +4,7 @@
   background: linear-gradient(180deg, #1f212c 0%, #1f2232 100%);
   min-height: 100vh;
   padding: 75px 175px;
+  padding-bottom: 30px;
 }
 
 .main {
@@ -16,7 +17,7 @@
   margin: 0%;
   font-weight: 500;
   color: #eceded;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .postCard {

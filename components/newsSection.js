@@ -14,9 +14,7 @@ export default function Home() {
 
   // fetches articles from contract
   const fetchNews = async () => {
-    const modal = new web3modal();
-    const connection = await modal.connect();
-    const provider = new ethers.providers.Web3Provider(connection);
+    const provider = new ethers.providers.JsonRpcProvider('https://polygon-mumbai.infura.io/v3/1dbc3ef8703a4669a5cda4f7de7343bc');
     const contract = new ethers.Contract(contractAddress, contractAbi.abi, provider)
     const data = await contract.fetchNews();
     const cards = await Promise.all(
@@ -55,7 +53,7 @@ export default function Home() {
     const signer = provider.getSigner();
     const contract = new ethers.Contract(contractAddress, contractAbi.abi, signer)
     const supportPrice = 1;
-    const msgValue = ethers.utils.parseUnits(supportPrice, "ether");
+    const msgValue =ethers.utils.formatUnits(supportPrice, 18)
     const data = await contract.transferSupport(tokenId, {
       value: msgValue,
     });
@@ -63,11 +61,14 @@ export default function Home() {
   }
 
   return (
-    <div>
+    <div className="newsSlider">
       <section className="section slider html">
 
         <style jsx global>
           {`
+          .newsSlider{
+            min-height: 100vh;
+          }
 pre, textarea {
   overflow: auto;
 }
