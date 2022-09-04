@@ -1,6 +1,6 @@
 import styles from "../styles/Post.module.css";
 import { contractAddress } from "../address.js";
-// import contractAbi from "../artifacts/contracts/NewsDapp.sol/NewsDapp.json";
+import contractAbi from "../artifacts/contracts/NewsDapp.sol/NewsDapp.json";
 import web3modal from "web3modal";
 import { ethers } from "ethers";
 import { useState } from "react";

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { contractAddress } from "../address.js";
-// import contractAbi from "../artifacts/contracts/NewsDapp.sol/NewsDapp.json";
+import contractAbi from "../artifacts/contracts/NewsDapp.sol/NewsDapp.json";
 import web3modal from "web3modal";
 import { ethers } from "ethers";
 import Slider from "./Slider";
@@ -9,7 +9,7 @@ export default function Home() {
   const [news, setNews] = useState([]);
 
   useEffect(() => {
-    // fetchNews();
+    fetchNews();
   }, []);
 
   // fetches articles from contract
