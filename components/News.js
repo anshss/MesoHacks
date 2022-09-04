@@ -11,7 +11,7 @@ export default function Third({ newsUpdate }) {
 
   useEffect(() => {
     fetchNews();
-  }, []);
+  }, [news]);
 
   useEffect(() => {
     newsUpdate(news);

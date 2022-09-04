@@ -74,4 +74,16 @@ contract NewsDapp {
         return NewsArr;
     }
 
+    function mostUpvote() public view returns (news memory) {
+        uint _mostUpvotes = 0;
+        uint _mostUpvoteToken = 1 ;
+        for(uint i=1; i<=_tokenIds.current(); i++) {
+            if(idToNews[i].upvote > _mostUpvotes) {
+                _mostUpvotes = idToNews[i].upvote;
+                 _mostUpvoteToken = i;
+            }
+        }
+        return idToNews[_mostUpvoteToken];
+    }
+    
 }
