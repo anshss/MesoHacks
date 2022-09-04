@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper";
-import styles from "../styles/Slider.module.css";
+import styles from "../styles/News.module.css";
 import SingleSlide from "./singleSlide";
 const Slider = ({ newsData }) => {
   return (

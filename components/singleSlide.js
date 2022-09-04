@@ -1,4 +1,4 @@
-import styles from "../styles/Slider.module.css";
+import styles from "../styles/News.module.css";
 
 const SingleSlide = ({ data, index }) => {
   return (

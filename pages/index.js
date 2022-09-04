@@ -1,16 +1,15 @@
 import styles from "../styles/Home.module.css";
-import NewsSection from "../components/newsSection";
+import Hero from "../components/Hero";
+import Quote from "../components/Quote";
+import News from "../components/News";
 import Footer from "../components/Footer";
-import First from "../components/First";
-import Second from "../components/Second";
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <First />
-      <Second />
-      <NewsSection />
-      {/* <Slider /> */}
+      <Hero />
+      <Quote />
+      <News />
       <Footer />
     </div>
   );

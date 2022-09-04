@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
 
 .hero {
     background: linear-gradient(180deg, #1f212c 0%, #1f2232 100%);
@@ -33,19 +33,17 @@
     color: white;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    padding: 5rem 5rem;
-    gap: 2rem;
+    padding: 2rem 4rem;
 }
 
 .articleHeading {
-    font-size: 2.4rem;
+    font-size: 2.1rem;
     font-family: 'Playfair Display', serif;
+    font-weight: 100;
 }
 
 .articleParagraph {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .image {

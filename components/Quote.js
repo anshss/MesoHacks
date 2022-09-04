@@ -1,4 +1,4 @@
-import styles from "../styles/Second.module.css";
+import styles from "../styles/Quote.module.css";
 
 export default function Second() {
     return (
