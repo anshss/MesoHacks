@@ -16,7 +16,6 @@ export default function First({ news }) {
   function findArticle() {
     var max = 0;
     var maxArticle = {};
-
     news.forEach((element) => {
       if (element.upvote > max) {
         maxArticle = element;
@@ -25,7 +24,9 @@ export default function First({ news }) {
     });
     setArticle(maxArticle);
   }
+
   console.log(article);
+
   return (
     <div className={styles.hero}>
       <h1 className={styles.heading}>Article of the Day!</h1>
@@ -34,7 +35,9 @@ export default function First({ news }) {
           <h1 className={styles.articleHeading}>{article.title}</h1>
           <p className={styles.articleParagraph}>{article.content}</p>
         </div>
-        <div className={styles.image}>{/* <img src="./Naruto.jpg" /> */}</div>
+        <div className={styles.image}>
+          <img src="./heroimage.jpg" className={styles.imageElement} />
+        </div>
       </div>
     </div>
   );
