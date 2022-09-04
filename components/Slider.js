@@ -6,7 +6,7 @@ import { EffectCoverflow, Pagination } from "swiper";
 import styles from "../styles/News.module.css";
 import SingleSlide from "./singleSlide";
 
-const Slider = ({ newsData, increaseUpvote }) => {
+const Slider = ({ newsData, increaseUpvote, transferSupport }) => {
   return (
     <div className={styles.sliderPage}>
       <style jsx global>
@@ -40,6 +40,7 @@ const Slider = ({ newsData, increaseUpvote }) => {
           <SwiperSlide key={index}>
             <SingleSlide
               increaseUpvote={increaseUpvote}
+              transferSupport={transferSupport}
               index={index}
               data={item}
             />

@@ -121,7 +121,11 @@ export default function Third({ newsUpdate }) {
   return (
     <div className={styles.news}>
       <h1 className={styles.divHeading}>Latest Articles:</h1>
-      <Slider increaseUpvote={increaseUpvote} newsData={news} />
+      <Slider
+        transferSupport={transferSupport}
+        increaseUpvote={increaseUpvote}
+        newsData={news}
+      />
     </div>
   );
 }

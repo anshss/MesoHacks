@@ -1,6 +1,6 @@
 import styles from "../styles/News.module.css";
 
-const SingleSlide = ({ data, index, increaseUpvote }) => {
+const SingleSlide = ({ data, index, increaseUpvote, transferSupport }) => {
   return (
     <div className={styles.newsCard}>
       <div className={styles.topBar}>
@@ -19,7 +19,10 @@ const SingleSlide = ({ data, index, increaseUpvote }) => {
       </div>
       <div className={styles.footer}>
         <img onClick={() => increaseUpvote(data.tokenId)} src="./like.png" />
-        <img src="./dollar-coin.png" />
+        <img
+          onClick={() => transferSupport(data.tokenId)}
+          src="./dollar-coin.png"
+        />
       </div>
     </div>
   );
