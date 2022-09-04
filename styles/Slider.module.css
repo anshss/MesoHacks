@@ -14,9 +14,11 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 .swiper-slide {
   filter: blur(4px);
 }
+
 .newsCard {
   /* width: 52.5%; */
   background-color: white;

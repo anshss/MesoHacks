@@ -1,11 +1,9 @@
-.navbar {
-  padding-left: 175px;
-  padding-right: 175px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.Navbar {
+  padding: 15px 175px;
   background-color: #1f212c;
 }
-.navbar hr {
+
+.Navbar hr {
   border-color: #3a3c45;
   border-width: 1px;
   border-style: solid;
@@ -16,16 +14,27 @@
   padding-bottom: 20px;
   gap: 60px;
 }
+
 .icon {
   padding: 10px;
   background-color: white;
   border-radius: 4px;
-  width: 55px;
+  width: 40px;
+  height: 40px;
 }
-.icon2 {
+
+.iconActive {
   padding: 10px;
   background-color: inherit;
   color: white;
   border-radius: 4px;
-  width: 55px;
+  width: 40px;
+  height: 40px;
+}
+
+.line {
+  width: 112px;
+  height: 47px;
+  border-bottom: 1px solid black;
+  position: absolute;
 }

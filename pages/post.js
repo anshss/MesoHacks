@@ -1,15 +1,20 @@
-import styles from "../styles/Createpost.module.css";
-import Head from "next/head";
-import React from "react";
+import styles from "../styles/Post.module.css";
+import { contractAddress } from "../address.js";
+// import contractAbi from "../artifacts/contracts/NewsDapp.sol/NewsDapp.json";
+import web3modal from "web3modal";
+import { ethers } from "ethers";
+import { useState } from "react";
 
-export default function Home() {
-  const [formData, setFormData] = React.useState({
+export default function Post() {
+  const [formData, setFormData] = useState({
     title: "",
     content: "",
     time: "",
   });
-  const [wordsCount, setWordsCount] = React.useState(0);
-  const [error, setError] = React.useState("");
+  const [wordsCount, setWordsCount] = useState(0);
+  const [error, setError] = useState("");
+
+  //handles input
   const handelTextareaChange = (event) => {
     const text = event.target.value;
     const words = text.trim().split(/\s+/).length;
@@ -17,23 +22,36 @@ export default function Home() {
     if (words <= 60) setFormData({ ...formData, content: text });
     else setError("Please describe less than 60 words only");
   };
+
+  //fires on clicking submit button
   const handelSubmit = () => {
     if (formData.title != "" && formData.content != "") {
       setError("");
       document.getElementById("submit-button").disabled = true;
       const DateTime = new Date();
-      latestData = { ...formData, time: DateTime.toISOString() };
+      const latestData = { ...formData, time: DateTime.toISOString() };
       console.log(latestData);
+      callContract(latestData.title, latestData.content, latestData.time);
     } else setError("Do not left fields empty");
+  };
+
+  //calls contract
+  const callContract = async (_title, _content, _time) => {
+    const modal = new web3modal();
+    const connection = await modal.connect();
+    const provider = new ethers.providers.Web3Provider(connection);
+    const signer = provider.getSigner();
+    const contract = new ethers.Contract(
+      contractAddress,
+      contractAbi.abi,
+      signer
+    );
+    const createNews = await contract.createNews(_title, _content, _time);
+    await createNews.wait();
   };
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Create Post</title>
-        <meta name="description" content="Create a post" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <div className={styles.main}>
         <h1 className={styles.heading}>Create your post here!</h1>
         <div className={styles.postCard}>
@@ -41,7 +59,10 @@ export default function Home() {
             <label>Title</label>
             <input
               onChange={(event) =>
-                setFormData({ ...formData, title: event.target.value })
+                setFormData({
+                  ...formData,
+                  title: event.target.value,
+                })
               }
               placeholder="Give the title for the post here!"
               type="text"

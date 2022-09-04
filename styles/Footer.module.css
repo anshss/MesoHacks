@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.footer {
+    text-align: center;
+    background: linear-gradient(
+        180deg,
+        rgb(0, 0, 0) 0%,
+        rgba(15, 23, 37, 1) 100%
+      );
+    color: white;
+    padding: 1.5rem 0;
+}
+
+.heading {
+    padding-bottom: 1.4rem;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+.contributors {
+    display: flex;
+    padding: 2rem 5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    font-size: 1.2rem;
+}
+
+.role {
+    padding-top: 3px;
+    font-size: 1rem; 
+    color: #bbbcbe;
+}
+
+.email {
+    color: #bbbcbe;
+    padding-top: 15px;
+    font-style: italic;
+}
