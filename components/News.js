@@ -85,6 +85,7 @@ export default function Third({ newsUpdate }) {
 
   //increases upvote on a news article
   const increaseUpvote = async (tokenId) => {
+    console.log("incraese upvote");
     const modal = new web3modal();
     const connection = await modal.connect();
     const provider = new ethers.providers.Web3Provider(connection);

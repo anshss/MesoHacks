@@ -18,7 +18,7 @@ const SingleSlide = ({ data, index, increaseUpvote }) => {
         <p>{data.content}</p>
       </div>
       <div className={styles.footer}>
-        <img onClick={() => increaseUpvote()} src="./like.png" />
+        <img onClick={() => increaseUpvote(data.tokenId)} src="./like.png" />
         <img src="./dollar-coin.png" />
       </div>
     </div>
