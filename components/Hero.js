@@ -4,14 +4,15 @@ import { useEffect, useState } from "react";
 import styles from "../styles/Hero.module.css";
 
 export default function First({ news }) {
-  console.log("hero page news", news);
   const [article, setArticle] = useState({
     title: "",
     content: "",
     address: "",
   });
 
-  useEffect(() => findArticle(), [news]);
+  useEffect(() => {
+    findArticle();
+  }, [news]);
 
   function findArticle() {
     var max = 0;
@@ -24,8 +25,6 @@ export default function First({ news }) {
     });
     setArticle(maxArticle);
   }
-
-  console.log(article);
 
   return (
     <div className={styles.hero}>
