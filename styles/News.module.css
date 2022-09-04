@@ -2,6 +2,7 @@
   background-color: black;
   padding-top: 2rem;
   height: 100vh;
+  margin-bottom: 8rem;
 }
 
 .divHeading {
@@ -77,6 +78,7 @@
 }
 
 .footer img {
-  width: 40px;
+  margin-top: 1rem;
+  width: 30px;
   cursor: pointer;
 }

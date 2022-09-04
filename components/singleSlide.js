@@ -19,7 +19,7 @@ const SingleSlide = ({ data, index }) => {
       </div>
       <div className={styles.footer}>
         <img src="./like.png" />
-        <img src="./support.png" />
+        <img src="./dollar-coin.png" />
       </div>
     </div>
   );

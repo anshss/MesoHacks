@@ -25,7 +25,7 @@ export default function First() {
                     <p className={styles.articleParagraph}>{article.content}</p>
                 </div>
                 <div className={styles.image}>
-                    {/* <img src="./Naruto.jpg" /> */}
+                    <img src="./heroimage.jpg" className={styles.imageElement}/>
                 </div>
             </div>
         </div>
