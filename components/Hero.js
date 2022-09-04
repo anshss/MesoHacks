@@ -1,7 +1,7 @@
 //article is the news article with most upvote
 
 import { useEffect, useState } from "react";
-import styles from "../styles/First.module.css";
+import styles from "../styles/Hero.module.css";
 
 export default function First() {
 

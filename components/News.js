@@ -1,3 +1,4 @@
+import styles from "../styles/News.module.css";
 import { useState, useEffect } from "react";
 import { contractAddress } from "../address.js";
 import contractAbi from "../artifacts/contracts/NewsDapp.sol/NewsDapp.json";
@@ -5,7 +6,7 @@ import web3modal from "web3modal";
 import { ethers } from "ethers";
 import Slider from "./Slider";
 
-export default function Home() {
+export default function Third() {
   const [news, setNews] = useState([
   {
     address: "0xdd3ddadsadd",
@@ -108,7 +109,8 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className={styles.news}>
+    <h1 className={styles.divHeading}>Latest Articles:</h1>
       <Slider />
     </div>
   );
