@@ -5,7 +5,7 @@ import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper";
 import styles from "../styles/Slider.module.css";
 
-export default () => {
+ const Slider = () => {
   return (
     <div className={styles.sliderPage}>
       <style jsx global>
@@ -169,3 +169,4 @@ export default () => {
     </div>
   );
 };
+export default Slider;
