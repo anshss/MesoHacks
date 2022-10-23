@@ -4,6 +4,7 @@ import contractAbi from "../artifacts/contracts/NewsDapp.sol/NewsDapp.json";
 import web3modal from "web3modal";
 import { ethers } from "ethers";
 import { useState } from "react";
+import { useRouter } from 'next/router'
 
 export default function Post() {
   const [formData, setFormData] = useState({
@@ -13,6 +14,7 @@ export default function Post() {
   });
   const [wordsCount, setWordsCount] = useState(0);
   const [error, setError] = useState("");
+  const router = useRouter()
 
   //handles input
   const handelTextareaChange = (event) => {
@@ -48,6 +50,7 @@ export default function Post() {
     );
     const createNews = await contract.createNews(_title, _content, _time);
     await createNews.wait();
+    router.push('/')
   };
 
   return (

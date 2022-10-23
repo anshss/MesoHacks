@@ -21,12 +21,14 @@ export default function Third({ newsUpdate }) {
 
   // fetches articles from contract
   const fetchNews = async () => {
-    // const provider = new ethers.providers.JsonRpcProvider(
-    //   `https://polygon-mumbai.infura.io/v3/${infuraId}}`
-    // );
-    const modal = new web3modal();
-    const connection = await modal.connect();
-    const provider = new ethers.providers.Web3Provider(connection);
+  
+    const provider = new ethers.providers.JsonRpcProvider(
+      `https://polygon-mumbai.infura.io/v3/${infuraId}`
+    );
+  
+  // const modal = new web3modal();
+  //   const connection = await modal.connect();
+  //   const provider = new ethers.providers.Web3Provider(connection);
     const contract = new ethers.Contract(
       contractAddress,
       contractAbi.abi,
