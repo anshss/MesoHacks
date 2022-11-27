@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
 
   // ------------
 
-  const CSC = {
+  const Mumbai = {
     id: 80001,
     name: 'Polygon mumbai',
     network: 'Polygon mumbai',
@@ -38,12 +38,12 @@ function MyApp({ Component, pageProps }) {
   }
 
   const { chains, provider } = configureChains(
-    [CSC],
+    [Mumbai],
     [
       infuraProvider({ apiKey: '1dbc3ef8703a4669a5cda4f7de7343bc'}),
       jsonRpcProvider({
         rpc: (chain) => {
-          if (chain.id !== CSC.id) return null
+          if (chain.id !== Mumbai.id) return null
           return { http: chain.rpcUrls.default }
         },
       }),

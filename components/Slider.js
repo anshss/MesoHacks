@@ -9,7 +9,7 @@ import SingleSlide from "./singleSlide";
 const Slider = ({ newsData, increaseUpvote, transferSupport }) => {
   return (
     <div className={styles.sliderPage}>
-      <style jsx global>
+      <style>
         {`
           .swiper-slide {
             filter: blur(4px);
