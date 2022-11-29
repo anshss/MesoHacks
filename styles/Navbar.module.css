@@ -43,6 +43,6 @@
 
 .loginState {
   position: absolute;
-  left: calc(100% - 175px);
+  left: calc(100% - 200px);
   top: 15px;
 }
