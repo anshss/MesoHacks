@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@font-face {
+    font-family: KaushanScript;
+    src: url(../public/KaushanScript-Regular.otf);
+  }
 
+  
 .second {
     height: 105vh;
     background-image: url("../public/newspaper.png");
@@ -14,7 +18,7 @@
 }
 
 .heading {
-    font-family: 'Kaushan Script', cursive ;
+    font-family: KaushanScript;
     font-size: 3rem;
     font-weight: 100;
     text-align: center;

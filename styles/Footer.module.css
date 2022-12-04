@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@font-face {
+    font-family: KaushanScript;
+    src: url(../public/KaushanScript-Regular.otf);
+  }
 
 .footer {
     text-align: center;
@@ -13,7 +16,7 @@
 
 .heading {
     padding-bottom: 1rem;
-    font-family: 'Kaushan Script', cursive;
+    font-family: KaushanScript;
     font-size: 1.6rem;
     font-weight: 100;
 }
